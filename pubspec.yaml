@@ -1,5 +1,5 @@
 name: lte_lock
-description: "Aplikasi Flutter untuk mengakses informasi radio/telephony yang menggantikan menu *#*#4636#*#*"
+description: "Aplikasi untuk membuka menu testing Android yang menggantikan *#*#4636#*#*"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  android_intent_plus: ^5.3.1
   permission_handler: ^12.0.1
   cupertino_icons: ^1.0.2
 
@@ -17,6 +16,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo/lte-lock.png"
+  min_sdk_android: 21
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/logo/lte-lock.png
